@@ -29,12 +29,13 @@ function sumRecursion(array) {
 function sumTheSimpleWay(array) {
   return _.reduce(array, function (memo, num) {
     return memo + num;
-  });
+  }, 0);
 }
 
-const testArray = [1, 2, 3, 4, 5];
+const testArray = [1, 2, 3, 4];
 
+console.log(sumTheSimpleWay(testArray));
 console.log(sumFor(testArray));
 console.log(sumWhile(testArray));
 console.log(sumRecursion(testArray));
-console.log(sumTheSimpleWay(testArray));
+
